@@ -10,11 +10,11 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, SelectField, StringField, BooleanField
 from wtforms.validators import Required
-import seaborn as sns
+import pandas as pd
 
 
 
-tips = sns.load_dataset('tips')
+tips = pd.read_csv('data/tips.csv')
 
 
 class tips_form(FlaskForm):
