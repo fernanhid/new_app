@@ -1,0 +1,30 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %}About Me{% endblock %}
+
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+
+<a class="navbar-brand" href="/">Welcome</a>
+<a class="navbar-brand" href="/like">Like</a>
+<a class="navbar-brand" href="/routine">Routine</a>
+</div>
+
+
+{% endblock %}
+
+
+
+{% block content %}  
+<div class='container'>
+
+
+    {% block page_content %}
+
+    {% endblock %}
+</div>
+    {% endblock %}
+

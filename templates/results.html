@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <h1>Hi {{name}}!</h1>
+    <h2> Average tip during {{time}} is ${{mean_tip}}</h2>
+
+<div> {{wtf.quick_form(form)}}</div>
+    
+{% endblock %}
